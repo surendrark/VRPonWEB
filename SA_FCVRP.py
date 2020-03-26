@@ -60,7 +60,7 @@ def SA(truck_capacity):
 	nb_trucks = nb_customers
 	# truck_capacity = 200
 	(distance_matrix, distance_origin) = compute_distance_matrix(nodes_x, nodes_y)
-	dc_data = pd.read_excel("/home/surendra/Dropbox/django/dc_data.xlsx")
+	dc_data = pd.read_excel("dcdata.xlsx")
 	acc = list(dc_data['Acceleration']) # instantaneous acceleration in m/s^2
 	speed = list(dc_data['Speed']) # speed in m/s
 
@@ -79,8 +79,8 @@ def SA(truck_capacity):
 	'''
 	#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-	MaxIter = 30
-	MaxIter_inner = 120
+	MaxIter = 40
+	MaxIter_inner = 200
 	initial_temp = 100
 	alpha = 0.99
 
