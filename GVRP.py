@@ -61,4 +61,4 @@ def map():
 
 	return render_template('result.html', latlonlist = latlonlist, pathlatlon= pathlatlon, demlist = demlist, cost = cost)
 if __name__ == "__main__":
-  app.run(debug=True, host= '10.21.58.202')
+  app.run(debug=True)
